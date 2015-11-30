@@ -16,6 +16,7 @@
 		B74422081C0C199F005F78C4 /* UIView+DrawTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74422061C0C199F005F78C4 /* UIView+DrawTools.swift */; };
 		B74422091C0C199F005F78C4 /* UIView+Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74422071C0C199F005F78C4 /* UIView+Rect.swift */; };
 		B744220C1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B744220B1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift */; };
+		B744220F1C0C1CDE005F78C4 /* UIImage+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B744220E1C0C1CDE005F78C4 /* UIImage+URL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B74422061C0C199F005F78C4 /* UIView+DrawTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DrawTools.swift"; sourceTree = "<group>"; };
 		B74422071C0C199F005F78C4 /* UIView+Rect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rect.swift"; sourceTree = "<group>"; };
 		B744220B1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Colors.swift"; path = "UINavigationBar/UINavigationBar+Colors.swift"; sourceTree = "<group>"; };
+		B744220E1C0C1CDE005F78C4 /* UIImage+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+URL.swift"; path = "UIImage/UIImage+URL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		B74421FB1C0C13AC005F78C4 /* RGUIExtension */ = {
 			isa = PBXGroup;
 			children = (
+				B744220D1C0C1CAE005F78C4 /* UIImage */,
 				B744220A1C0C19CD005F78C4 /* UINavigationBar */,
 				B74421FF1C0C168D005F78C4 /* UIView */,
 				B74421FC1C0C13FF005F78C4 /* RGUIConstant */,
@@ -106,6 +109,14 @@
 				B744220B1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift */,
 			);
 			name = UINavigationBar;
+			sourceTree = "<group>";
+		};
+		B744220D1C0C1CAE005F78C4 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				B744220E1C0C1CDE005F78C4 /* UIImage+URL.swift */,
+			);
+			name = UIImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B744220F1C0C1CDE005F78C4 /* UIImage+URL.swift in Sources */,
 				B74422081C0C199F005F78C4 /* UIView+DrawTools.swift in Sources */,
 				B744220C1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift in Sources */,
 				B74422051C0C197D005F78C4 /* RGUIConstant.swift in Sources */,
