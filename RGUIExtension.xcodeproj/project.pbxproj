@@ -18,6 +18,7 @@
 		B744220C1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B744220B1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift */; };
 		B744220F1C0C1CDE005F78C4 /* UIImage+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B744220E1C0C1CDE005F78C4 /* UIImage+URL.swift */; };
 		B74422121C0C1EA3005F78C4 /* UIColor+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74422111C0C1EA3005F78C4 /* UIColor+Initialization.swift */; };
+		B74422151C0C1F3A005F78C4 /* RGScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74422141C0C1F3A005F78C4 /* RGScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B744220B1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Colors.swift"; path = "UINavigationBar/UINavigationBar+Colors.swift"; sourceTree = "<group>"; };
 		B744220E1C0C1CDE005F78C4 /* UIImage+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+URL.swift"; path = "UIImage/UIImage+URL.swift"; sourceTree = "<group>"; };
 		B74422111C0C1EA3005F78C4 /* UIColor+Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Initialization.swift"; path = "UIColor/UIColor+Initialization.swift"; sourceTree = "<group>"; };
+		B74422141C0C1F3A005F78C4 /* RGScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGScreen.swift; path = RGScreen/RGScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +82,12 @@
 		B74421FB1C0C13AC005F78C4 /* RGUIExtension */ = {
 			isa = PBXGroup;
 			children = (
+				B74421FC1C0C13FF005F78C4 /* RGUIConstant */,
+				B74422131C0C1F17005F78C4 /* RGScreen */,
 				B74422101C0C1DE3005F78C4 /* UIColor */,
 				B744220D1C0C1CAE005F78C4 /* UIImage */,
 				B744220A1C0C19CD005F78C4 /* UINavigationBar */,
 				B74421FF1C0C168D005F78C4 /* UIView */,
-				B74421FC1C0C13FF005F78C4 /* RGUIConstant */,
 			);
 			path = RGUIExtension;
 			sourceTree = "<group>";
@@ -128,6 +131,14 @@
 				B74422111C0C1EA3005F78C4 /* UIColor+Initialization.swift */,
 			);
 			name = UIColor;
+			sourceTree = "<group>";
+		};
+		B74422131C0C1F17005F78C4 /* RGScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B74422141C0C1F3A005F78C4 /* RGScreen.swift */,
+			);
+			name = RGScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 				B74422081C0C199F005F78C4 /* UIView+DrawTools.swift in Sources */,
 				B744220C1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift in Sources */,
 				B74422051C0C197D005F78C4 /* RGUIConstant.swift in Sources */,
+				B74422151C0C1F3A005F78C4 /* RGScreen.swift in Sources */,
 				B74422091C0C199F005F78C4 /* UIView+Rect.swift in Sources */,
 				B74421EC1C0C12AF005F78C4 /* ViewController.swift in Sources */,
 				B74421EA1C0C12AE005F78C4 /* AppDelegate.swift in Sources */,
