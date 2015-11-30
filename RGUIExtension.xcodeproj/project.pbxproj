@@ -12,9 +12,10 @@
 		B74421EF1C0C12AF005F78C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74421ED1C0C12AF005F78C4 /* Main.storyboard */; };
 		B74421F11C0C12AF005F78C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B74421F01C0C12AF005F78C4 /* Assets.xcassets */; };
 		B74421F41C0C12AF005F78C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74421F21C0C12AF005F78C4 /* LaunchScreen.storyboard */; };
-		B74421FE1C0C144A005F78C4 /* RGUIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74421FD1C0C144A005F78C4 /* RGUIConstant.swift */; };
-		B74422011C0C16F8005F78C4 /* UIView+DrawTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74422001C0C16F8005F78C4 /* UIView+DrawTools.swift */; };
-		B74422031C0C1766005F78C4 /* UIView+Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74422021C0C1766005F78C4 /* UIView+Rect.swift */; };
+		B74422051C0C197D005F78C4 /* RGUIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74422041C0C197D005F78C4 /* RGUIConstant.swift */; };
+		B74422081C0C199F005F78C4 /* UIView+DrawTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74422061C0C199F005F78C4 /* UIView+DrawTools.swift */; };
+		B74422091C0C199F005F78C4 /* UIView+Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74422071C0C199F005F78C4 /* UIView+Rect.swift */; };
+		B744220C1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B744220B1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +26,10 @@
 		B74421F01C0C12AF005F78C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B74421F31C0C12AF005F78C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B74421F51C0C12AF005F78C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B74421FD1C0C144A005F78C4 /* RGUIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGUIConstant.swift; path = RGUIExtension/RGUIConstant/RGUIConstant.swift; sourceTree = "<group>"; };
-		B74422001C0C16F8005F78C4 /* UIView+DrawTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+DrawTools.swift"; path = "RGUIExtension/UIView/UIView+DrawTools.swift"; sourceTree = "<group>"; };
-		B74422021C0C1766005F78C4 /* UIView+Rect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Rect.swift"; path = "RGUIExtension/UIView/UIView+Rect.swift"; sourceTree = "<group>"; };
+		B74422041C0C197D005F78C4 /* RGUIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGUIConstant.swift; sourceTree = "<group>"; };
+		B74422061C0C199F005F78C4 /* UIView+DrawTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DrawTools.swift"; sourceTree = "<group>"; };
+		B74422071C0C199F005F78C4 /* UIView+Rect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rect.swift"; sourceTree = "<group>"; };
+		B744220B1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Colors.swift"; path = "UINavigationBar/UINavigationBar+Colors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,27 +76,36 @@
 		B74421FB1C0C13AC005F78C4 /* RGUIExtension */ = {
 			isa = PBXGroup;
 			children = (
+				B744220A1C0C19CD005F78C4 /* UINavigationBar */,
 				B74421FF1C0C168D005F78C4 /* UIView */,
 				B74421FC1C0C13FF005F78C4 /* RGUIConstant */,
 			);
-			name = RGUIExtension;
+			path = RGUIExtension;
 			sourceTree = "<group>";
 		};
 		B74421FC1C0C13FF005F78C4 /* RGUIConstant */ = {
 			isa = PBXGroup;
 			children = (
-				B74421FD1C0C144A005F78C4 /* RGUIConstant.swift */,
+				B74422041C0C197D005F78C4 /* RGUIConstant.swift */,
 			);
-			name = RGUIConstant;
+			path = RGUIConstant;
 			sourceTree = "<group>";
 		};
 		B74421FF1C0C168D005F78C4 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				B74422001C0C16F8005F78C4 /* UIView+DrawTools.swift */,
-				B74422021C0C1766005F78C4 /* UIView+Rect.swift */,
+				B74422061C0C199F005F78C4 /* UIView+DrawTools.swift */,
+				B74422071C0C199F005F78C4 /* UIView+Rect.swift */,
 			);
-			name = UIView;
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		B744220A1C0C19CD005F78C4 /* UINavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				B744220B1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift */,
+			);
+			name = UINavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,11 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B74422011C0C16F8005F78C4 /* UIView+DrawTools.swift in Sources */,
-				B74421FE1C0C144A005F78C4 /* RGUIConstant.swift in Sources */,
+				B74422081C0C199F005F78C4 /* UIView+DrawTools.swift in Sources */,
+				B744220C1C0C1A7C005F78C4 /* UINavigationBar+Colors.swift in Sources */,
+				B74422051C0C197D005F78C4 /* RGUIConstant.swift in Sources */,
+				B74422091C0C199F005F78C4 /* UIView+Rect.swift in Sources */,
 				B74421EC1C0C12AF005F78C4 /* ViewController.swift in Sources */,
 				B74421EA1C0C12AE005F78C4 /* AppDelegate.swift in Sources */,
-				B74422031C0C1766005F78C4 /* UIView+Rect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
