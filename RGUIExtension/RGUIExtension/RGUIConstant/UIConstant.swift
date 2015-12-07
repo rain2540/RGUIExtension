@@ -1,5 +1,5 @@
 //
-//  RGUIConstant.swift
+//  UIConstant.swift
 //  RGUIExtension
 //
 //  Created by RAIN on 15/11/30.
