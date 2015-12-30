@@ -9,15 +9,16 @@
 import UIKit
 
 extension UIColor {
-    /**
-    通过指定的不透明度和 RGB 分量值, 初始化并返回一个颜色对象
-    
-    - parameter Red:    红色分量的值 (0 ~ 255)
-    - parameter Green:  绿色分量的值 (0 ~ 255)
-    - parameter Blue:   蓝色分量的值 (0 ~ 255)
-    - parameter Alpha:  不透明度的值 (0 ~ 1)
-    
-    */
+     /**
+     通过指定的不透明度和 RGB 分量值, 初始化并返回一个颜色对象
+     
+     - parameter Red:   红色分量的值 (0 ~ 255)
+     - parameter Green: 绿色分量的值 (0 ~ 255)
+     - parameter Blue:  蓝色分量的值 (0 ~ 255)
+     - parameter Alpha: 不透明度的值 (0 ~ 1)
+     
+     - returns: 被初始化的颜色
+     */
     public convenience init(Red: CGFloat, Green: CGFloat, Blue: CGFloat, Alpha: CGFloat) {
         self.init(red: Red / 255.0, green: Green / 255.0, blue: Blue / 255.0, alpha: Alpha)
     }
