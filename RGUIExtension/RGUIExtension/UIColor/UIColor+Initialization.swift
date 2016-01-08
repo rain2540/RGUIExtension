@@ -29,6 +29,7 @@ extension UIColor {
      - parameter hexString: 以"#"或"0x"开头, 后面跟随6位(或3位)16进制数字 表示RGB分量值的字符串
      - parameter alpha:     不透明度 (0 ~ 1)
      
+     - returns: 被初始化的颜色
      */
     public convenience init(hexString: String, alpha: CGFloat) {
         var red:   CGFloat = 0.0
