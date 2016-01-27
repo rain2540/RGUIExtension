@@ -14,13 +14,13 @@ public enum RGLineDirection {
 }
 
 extension UIView {
-    /**
+     /**
      为视图添加边线
-    
-     - parameter width:         边线宽度
-     - parameter cornerRadius:  边线圆角半径
-     - parameter color:         边线颜色
-    */
+     
+     - parameter width:        边线宽度
+     - parameter cornerRadius: 边线圆角半径
+     - parameter color:        边线颜色
+     */
     public func addBorder(width: CGFloat, cornerRadius: CGFloat, color: UIColor) {
         self.layer.masksToBounds = true
         self.layer.borderWidth = width
