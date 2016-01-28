@@ -27,8 +27,8 @@ extension UIView {
         self.layer.cornerRadius = cornerRadius
         self.layer.borderColor = color.CGColor
     }
-    
-    /**
+
+     /**
      在 view 的指定位置加指定颜色的线
      
      - parameter startPoint: 起始点坐标
@@ -36,7 +36,9 @@ extension UIView {
      - parameter width:      宽度
      - parameter color:      颜色
      - parameter direction:  方向
-    */
+     
+     - returns: 按参数条件添加的线
+     */
     public func drawLine(startPoint: CGPoint, length: CGFloat, width: CGFloat, color: UIColor, direction: RGLineDirection = .Horizontal) -> UIView {
         let line = UIView()
         line.backgroundColor = color
