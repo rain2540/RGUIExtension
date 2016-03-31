@@ -10,9 +10,11 @@ import UIKit
 
 extension UIImage {
     /**
-     通过URL路径获取Image
+     通过 URL 路径获取 Image
      
-     - parameter contentsOfURL: 图片的 URL 地址
+     - parameter URLString: 图片的 URL 地址
+     
+     - returns: 初始化的 UIImage 对象, 如果不能从该 URL 初始化图像则返回nil
      */
     public convenience init?(contentsOfURL URLString: String) {
         guard let URL = NSURL(string: URLString) else {
