@@ -12,8 +12,7 @@ extension UINavigationBar {
     /**
      修改 Navigation Bar 的背景颜色
      
-     - parameter color: 想要修改的颜色
-     
+     - parameter color: 提供给 Navigation Bar 的背景的 tint color
      */
     static func barTintColor(color: UIColor) {
         UINavigationBar.appearance().barTintColor = color
