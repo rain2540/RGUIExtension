@@ -19,10 +19,15 @@ extension UINavigationBar {
     }
     
     /**
-     修改 Navigation Bar 的主题颜色
+     
      
      - parameter color: 想要修改的颜色
      
+     */
+    /**
+     修改 Navigation item 和 bar button item 的 tint color
+     
+     - parameter color: 提供给 Navigation item 和 bar button item 的 tint color
      */
     static func tintColor(color: UIColor) {
         UINavigationBar.appearance().tintColor = color
