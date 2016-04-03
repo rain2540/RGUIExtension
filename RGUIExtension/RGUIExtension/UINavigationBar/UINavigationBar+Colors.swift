@@ -19,12 +19,6 @@ extension UINavigationBar {
     }
     
     /**
-     
-     
-     - parameter color: 想要修改的颜色
-     
-     */
-    /**
      修改 Navigation item 和 bar button item 的 tint color
      
      - parameter color: 提供给 Navigation item 和 bar button item 的 tint color
@@ -36,8 +30,7 @@ extension UINavigationBar {
     /**
      修改 Navigation Bar 的文字颜色
      
-     - parameter color: 想要修改的颜色
-     
+     - parameter color: 提供给 Navigation Bar 上文字的颜色
      */
     static func titleTextColor(color: UIColor) {
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: color]
