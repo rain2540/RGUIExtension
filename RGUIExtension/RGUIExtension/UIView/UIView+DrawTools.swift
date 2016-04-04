@@ -18,7 +18,7 @@ extension UIView {
      为视图添加边线
      
      - parameter width:        边线宽度
-     - parameter cornerRadius: 边线圆角半径
+     - parameter cornerRadius: 边线圆角半径, 若无圆角则值为0
      - parameter color:        边线颜色
      */
     public func addBorder(width: CGFloat, cornerRadius: CGFloat, color: UIColor) {
