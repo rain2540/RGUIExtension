@@ -32,44 +32,45 @@ extension UIColor {
      - returns: 被初始化的颜色对象
      */
     public convenience init(hexString: String, alpha: CGFloat) {
-        var red:   CGFloat = 0.0
-        var green: CGFloat = 0.0
-        var blue:  CGFloat = 0.0
         
+        var red: CGFloat = 0.0, green: CGFloat = 0.0, blue:  CGFloat = 0.0
         var cString = hexString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).uppercaseString
         
-        if cString.hasPrefix("0X") || cString.hasPrefix("#") {
-            if cString.hasPrefix("0X") {
-                cString = cString.substringFromIndex(cString.startIndex.advancedBy(2))
-            } else if cString.hasPrefix("#") {
-                cString = cString.substringFromIndex(cString.startIndex.advancedBy(1))
-            }
-            
-            let scanner = NSScanner(string: cString)
-            var hexValue: CUnsignedLongLong = 0
-            
-            if scanner.scanHexLongLong(&hexValue) {
-                switch (cString.characters.count) {
-                case 3:
-                    red   = CGFloat((hexValue & 0xF00) >> 8)       / 15.0
-                    green = CGFloat((hexValue & 0x0F0) >> 4)       / 15.0
-                    blue  = CGFloat(hexValue & 0x00F)              / 15.0
-                    
-                case 6:
-                    red   = CGFloat((hexValue & 0xFF0000) >> 16)   / 255.0
-                    green = CGFloat((hexValue & 0x00FF00) >> 8)    / 255.0
-                    blue  = CGFloat(hexValue & 0x0000FF)           / 255.0
-                    
-                default:
-                    print("Invalid RGB hex string, number of characters after '#' or '0x' should be either 3 or 6.")
-                }
-            } else {
-                print("Scan hex error.")
-            }
-        } else {
+        guard cString.hasPrefix("0X") || cString.hasPrefix("#") else {
             print("Invalid RGB hex string, missing '#' or '0x' as prefix.")
+            self.init(red: 1, green: 0, blue: 0, alpha: 1)
+            return
         }
         
+        if cString.hasPrefix("0X") {
+            cString = cString.substringFromIndex(cString.startIndex.advancedBy(2))
+        } else if cString.hasPrefix("#") {
+            cString = cString.substringFromIndex(cString.startIndex.advancedBy(1))
+        }
+        
+        let scanner = NSScanner(string: cString)
+        var hexValue: CUnsignedLongLong = 0
+        guard scanner.scanHexLongLong(&hexValue) else {
+            print("Scan hex error.")
+            self.init(red: 0, green: 1, blue: 0, alpha: 1)
+            return
+        }
+        
+        switch (cString.characters.count) {
+        case 3:
+            red   = CGFloat((hexValue & 0xF00) >> 8)       / 15.0
+            green = CGFloat((hexValue & 0x0F0) >> 4)       / 15.0
+            blue  = CGFloat(hexValue & 0x00F)              / 15.0
+            
+        case 6:
+            red   = CGFloat((hexValue & 0xFF0000) >> 16)   / 255.0
+            green = CGFloat((hexValue & 0x00FF00) >> 8)    / 255.0
+            blue  = CGFloat(hexValue & 0x0000FF)           / 255.0
+            
+        default:
+            red = 0.0; green = 0.0; blue = 1.0
+            print("Invalid RGB hex string, number of characters after '#' or '0x' should be either 3 or 6.")
+        }
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
 }
