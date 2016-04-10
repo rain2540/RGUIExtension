@@ -17,7 +17,7 @@ extension UIColor {
      - parameter Blue:  蓝色分量的值 (0 ~ 255)
      - parameter Alpha: 不透明度的值 (0 ~ 1)
      
-     - returns: 被初始化的颜色
+     - returns: 被初始化的颜色对象
      */
     public convenience init(Red: CGFloat, Green: CGFloat, Blue: CGFloat, Alpha: CGFloat) {
         self.init(red: Red / 255.0, green: Green / 255.0, blue: Blue / 255.0, alpha: Alpha)
@@ -29,7 +29,7 @@ extension UIColor {
      - parameter hexString: 以"#"或"0x"开头, 后面跟随6位(或3位)16进制数字 表示RGB分量值的字符串
      - parameter alpha:     不透明度 (0 ~ 1)
      
-     - returns: 被初始化的颜色
+     - returns: 被初始化的颜色对象
      */
     public convenience init(hexString: String, alpha: CGFloat) {
         var red:   CGFloat = 0.0
