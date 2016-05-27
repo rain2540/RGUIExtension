@@ -8,6 +8,12 @@
 
 import UIKit
 
+/**
+ 绘制线条的方向
+ 
+ - Horizontal: 水平方向
+ - Vertical:   竖直方向
+ */
 public enum RGLineDirection {
     case Horizontal
     case Vertical
