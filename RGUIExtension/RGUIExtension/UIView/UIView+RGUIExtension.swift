@@ -16,8 +16,8 @@ import UIKit
  - Vertical:   竖直方向
  */
 public enum RGLineDirection {
-    case Horizontal
-    case Vertical
+    case horizontal
+    case vertical
 }
 
 extension UIView {
@@ -28,11 +28,11 @@ extension UIView {
      - parameter cornerRadius: 边线圆角半径, 若无圆角则值为0
      - parameter color:        边线颜色
      */
-    public func addBorder(width: CGFloat, cornerRadius: CGFloat, color: UIColor) {
+    public func addBorder(_ width: CGFloat, cornerRadius: CGFloat, color: UIColor) {
         self.layer.masksToBounds = true
         self.layer.borderWidth = width
         self.layer.cornerRadius = cornerRadius
-        self.layer.borderColor = color.CGColor
+        self.layer.borderColor = color.cgColor
     }
 
      /**
@@ -46,15 +46,15 @@ extension UIView {
      
      - returns: 按参数条件添加的线
      */
-    public func drawLine(startPoint: CGPoint, length: CGFloat, width: CGFloat, color: UIColor, direction: RGLineDirection = .Horizontal) -> UIView {
+    public func drawLine(_ startPoint: CGPoint, length: CGFloat, width: CGFloat, color: UIColor, direction: RGLineDirection = .horizontal) -> UIView {
         let line = UIView()
         line.backgroundColor = color
         
         switch (direction) {
-        case .Horizontal:
+        case .horizontal:
             line.frame = CGRect(x: startPoint.x, y: startPoint.y, width: length, height: width)
             
-        case .Vertical:
+        case .vertical:
             line.frame = CGRect(x: startPoint.x, y: startPoint.y, width: width, height: length)
         }
         

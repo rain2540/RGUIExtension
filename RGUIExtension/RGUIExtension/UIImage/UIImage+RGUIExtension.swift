@@ -17,17 +17,22 @@ extension UIImage {
      
      - returns: 初始化的 UIImage 对象, 如果不能从该 URL 初始化图像则返回nil
      */
-    public convenience init?(contentsOfURL URLString: String) {
-        guard let URL = NSURL(string: URLString) else {
+    public convenience init?(contentsOf URLString: String) {
+        guard let url = URL(string: URLString) else {
             print("UIImage init Error: URL might not exist")
             return nil
         }
-        
-        guard let data = NSData(contentsOfURL: URL) else {
-            print("UIImage init Error: get data fail")
-            return nil
+        var gotData: Data?
+        do {
+            gotData = try Data(contentsOf: url)
+        } catch let error as NSError {
+            print("UIImage init Error: ", error)
         }
         
+        guard let data = gotData else {
+            print("UIImage init got data is nil")
+            return nil
+        }
         self.init(data: data)
     }
 }
