@@ -1,5 +1,5 @@
 //
-//  UIColor+Initialization.swift
+//  UIColor+RGUIExtension.swift
 //  RGUIExtension
 //
 //  Created by RAIN on 15/11/30.
