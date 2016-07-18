@@ -1,5 +1,5 @@
 //
-//  UINavigationBar+Colors.swift
+//  UINavigationBar+RGUIExtension.swift
 //  RGUIExtension
 //
 //  Created by RAIN on 15/11/30.
