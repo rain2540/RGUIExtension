@@ -1,5 +1,5 @@
 //
-//  UIImage+URL.swift
+//  UIImage+RGUIExtension.swift
 //  RGUIExtension
 //
 //  Created by RAIN on 15/11/30.
