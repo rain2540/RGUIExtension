@@ -20,7 +20,8 @@ struct MainScreen {
     
     /// Screen.height
     static var height: CGFloat { return self.size.height }
-    
+
+    //  MARK: Private
     private static var opScreen: UIScreen?
     private static var mainScreen: UIScreen {
         if self.opScreen == nil {
