@@ -13,7 +13,7 @@ extension UIView {
     //  MARK: size
     /// size
     var size: CGSize { return self.bounds.size }
-/*
+
     /// width
     var width: CGFloat {
         get {
@@ -26,7 +26,7 @@ extension UIView {
             self.frame = frame
         }
     }
-
+/*
     /// height
     var height: CGFloat {
         get {
