@@ -12,20 +12,10 @@ import UIKit
 extension UIView {
     //  MARK: size
     /// size
-    var size: CGSize { return self.bounds.size }
-    
+
+
     /// width
-    var width: CGFloat {
-        get {
-            return self.size.width
-        }
-        
-        set {
-            var frame = self.frame
-            frame.size.width = newValue
-            self.frame = frame
-        }
-    }
+
     
     /// height
     var height: CGFloat {
@@ -79,3 +69,4 @@ extension UIView {
     /// mid y
     var midY: CGFloat { return (self.y + self.maxY) / 2 }
 }
+
