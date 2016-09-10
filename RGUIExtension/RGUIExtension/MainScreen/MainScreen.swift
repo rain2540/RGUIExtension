@@ -25,7 +25,7 @@ struct MainScreen {
     private static var opScreen: UIScreen?
     private static var mainScreen: UIScreen {
         if self.opScreen == nil {
-            self.opScreen = UIScreen.mainScreen()
+            self.opScreen = UIScreen.main
         }
         return self.opScreen!
     }

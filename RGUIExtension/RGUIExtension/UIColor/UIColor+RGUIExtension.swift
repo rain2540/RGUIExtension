@@ -35,7 +35,7 @@ extension UIColor {
     public convenience init(hexString: String, alpha: CGFloat) {
         
         var red: CGFloat = 0.0, green: CGFloat = 0.0, blue:  CGFloat = 0.0
-        var cString = hexString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).uppercaseString
+        var cString = hexString.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines).uppercased()
         
         guard cString.hasPrefix("0X") || cString.hasPrefix("#") else {
             print("Invalid RGB hex string, missing '#' or '0x' as prefix.")
@@ -44,14 +44,14 @@ extension UIColor {
         }
         
         if cString.hasPrefix("0X") {
-            cString = cString.substringFromIndex(cString.startIndex.advancedBy(2))
+            cString = cString.substring(from: cString.index(cString.startIndex, offsetBy: 2))
         } else if cString.hasPrefix("#") {
-            cString = cString.substringFromIndex(cString.startIndex.advancedBy(1))
+            cString = cString.substring(from: cString.index(cString.startIndex, offsetBy: 1))
         }
         
-        let scanner = NSScanner(string: cString)
+        let scanner = Scanner(string: cString)
         var hexValue: CUnsignedLongLong = 0
-        guard scanner.scanHexLongLong(&hexValue) else {
+        guard scanner.scanHexInt64(&hexValue) else {
             print("Scan hex error.")
             self.init(red: 0, green: 1, blue: 0, alpha: 1)
             return
