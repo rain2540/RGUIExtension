@@ -78,18 +78,6 @@ extension UIView {
     
     /// mid y
     var midY: CGFloat { return (self.y + self.maxY) / 2 }
-
-    /// right side x
-    var maxX: CGFloat { return self.x + self.width }
-
-    /// bottom y
-    var maxY: CGFloat { return self.y + self.height }
-
-    /// mid x
-    var midX: CGFloat { return (self.x + self.maxX) / 2 }
-
-    /// mid y
-    var midY: CGFloat { return (self.y + self.maxY) / 2 }
 }
 
 
