@@ -16,6 +16,7 @@
 		B744220C1C0C1A7C005F78C4 /* UINavigationBar+RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B744220B1C0C1A7C005F78C4 /* UINavigationBar+RGUIExtension.swift */; };
 		B744220F1C0C1CDE005F78C4 /* UIImage+RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B744220E1C0C1CDE005F78C4 /* UIImage+RGUIExtension.swift */; };
 		B74422121C0C1EA3005F78C4 /* UIColor+RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74422111C0C1EA3005F78C4 /* UIColor+RGUIExtension.swift */; };
+		B7A0F3911DF0FD9D002BC81C /* RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A0F3901DF0FD9D002BC81C /* RGUIExtension.swift */; };
 		B7CB1E281C15178100069ABD /* UIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB1E271C15178100069ABD /* UIConstant.swift */; };
 		B7CB1E2A1C15217F00069ABD /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB1E291C15217F00069ABD /* MainScreen.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		B744220B1C0C1A7C005F78C4 /* UINavigationBar+RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+RGUIExtension.swift"; path = "UINavigationBar/UINavigationBar+RGUIExtension.swift"; sourceTree = "<group>"; };
 		B744220E1C0C1CDE005F78C4 /* UIImage+RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+RGUIExtension.swift"; path = "UIImage/UIImage+RGUIExtension.swift"; sourceTree = "<group>"; };
 		B74422111C0C1EA3005F78C4 /* UIColor+RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+RGUIExtension.swift"; path = "UIColor/UIColor+RGUIExtension.swift"; sourceTree = "<group>"; };
+		B7A0F3901DF0FD9D002BC81C /* RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGUIExtension.swift; sourceTree = "<group>"; };
 		B7CB1E271C15178100069ABD /* UIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstant.swift; sourceTree = "<group>"; };
 		B7CB1E291C15217F00069ABD /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 		B74421FB1C0C13AC005F78C4 /* RGUIExtension */ = {
 			isa = PBXGroup;
 			children = (
+				B7A0F3901DF0FD9D002BC81C /* RGUIExtension.swift */,
 				B74421FC1C0C13FF005F78C4 /* RGUIConstant */,
 				B74422131C0C1F17005F78C4 /* MainScreen */,
 				B74422101C0C1DE3005F78C4 /* UIColor */,
@@ -170,6 +173,7 @@
 				TargetAttributes = {
 					B74421E51C0C12AE005F78C4 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 76U7MFBQ83;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -214,6 +218,7 @@
 				B74422081C0C199F005F78C4 /* UIView+RGUIExtension.swift in Sources */,
 				B7CB1E2A1C15217F00069ABD /* MainScreen.swift in Sources */,
 				B744220C1C0C1A7C005F78C4 /* UINavigationBar+RGUIExtension.swift in Sources */,
+				B7A0F3911DF0FD9D002BC81C /* RGUIExtension.swift in Sources */,
 				B7CB1E281C15178100069ABD /* UIConstant.swift in Sources */,
 				B74421EC1C0C12AF005F78C4 /* ViewController.swift in Sources */,
 				B74421EA1C0C12AE005F78C4 /* AppDelegate.swift in Sources */,
@@ -328,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 76U7MFBQ83;
 				INFOPLIST_FILE = RGUIExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -341,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 76U7MFBQ83;
 				INFOPLIST_FILE = RGUIExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
