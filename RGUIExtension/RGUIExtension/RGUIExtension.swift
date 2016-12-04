@@ -14,19 +14,19 @@ public struct RGUIExtension<Base> {
         self.base = base
     }
 }
-/*
-public protocol RGUIExtensionCompatible {
-    associatedtype CompatibleType
-    var rg: CompatibleType { get }
-    static var rg: CompatibleType.Type { get }
-}
 
+public protocol RGUIExtensionCompatible {
+    associatedtype RUECompatibleType
+    var rue: RUECompatibleType { get }
+    static var rue: RUECompatibleType.Type { get }
+}
+/*
 public extension RGUIExtensionCompatible {
-    public var rg: RGUIExtension<Self> {
+    public var rue: RGUIExtension<Self> {
         return RGUIExtension(self)
     }
 
-    public static var rg: RGUIExtension<Self>.Type {
+    public static var rue: RGUIExtension<Self>.Type {
         return RGUIExtension.self
     }
 }
