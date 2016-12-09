@@ -20,7 +20,7 @@ public protocol RGUIExtensionCompatible {
     var rue: RUECompatibleType { get }
     static var rue: RUECompatibleType.Type { get }
 }
-/*
+
 public extension RGUIExtensionCompatible {
     public var rue: RGUIExtension<Self> {
         return RGUIExtension(self)
@@ -31,5 +31,5 @@ public extension RGUIExtensionCompatible {
     }
 }
 
-extension NSObject: RGUIExtensionCompatible { }
-*/
+//extension NSObject: RGUIExtensionCompatible { }
+
