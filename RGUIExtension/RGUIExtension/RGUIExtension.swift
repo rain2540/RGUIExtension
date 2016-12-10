@@ -31,5 +31,5 @@ public extension RGUIExtensionCompatible {
     }
 }
 
-//extension NSObject: RGUIExtensionCompatible { }
+extension NSObject: RGUIExtensionCompatible { }
 
