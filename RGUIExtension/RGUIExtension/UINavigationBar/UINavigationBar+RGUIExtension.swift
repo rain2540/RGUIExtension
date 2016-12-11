@@ -8,6 +8,10 @@
 
 import UIKit
 
+extension RGUIExtension where Base: UINavigationBar {
+
+}
+
 //  MARK: Colors
 extension UINavigationBar {
     /**
