@@ -10,6 +10,7 @@ import Foundation
 
 public struct RGUIExtension<Base> {
     public let base: Base
+
     public init(_ base: Base) {
         self.base = base
     }
