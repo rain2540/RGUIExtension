@@ -9,7 +9,9 @@
 import UIKit
 
 extension RGUIExtension where Base: UINavigationBar {
-
+    static func barTintColor(_ color: UIColor) {
+        UINavigationBar.appearance().barTintColor = color
+    }
 }
 
 //  MARK: Colors
