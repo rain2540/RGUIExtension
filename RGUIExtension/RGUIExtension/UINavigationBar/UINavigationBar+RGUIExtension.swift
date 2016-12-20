@@ -12,6 +12,10 @@ extension RGUIExtension where Base: UINavigationBar {
     static func barTintColor(_ color: UIColor) {
         UINavigationBar.appearance().barTintColor = color
     }
+
+    static func tintColor(_ color: UIColor) {
+        UINavigationBar.appearance().tintColor = color
+    }
 }
 
 //  MARK: Colors
