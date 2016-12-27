@@ -33,4 +33,3 @@ public extension RGUIExtensionCompatible {
 }
 
 extension NSObject: RGUIExtensionCompatible { }
-
