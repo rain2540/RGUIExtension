@@ -16,6 +16,10 @@ extension RGUIExtension where Base: UINavigationBar {
     static func tintColor(_ color: UIColor) {
         UINavigationBar.appearance().tintColor = color
     }
+
+    static func titleTextColor(_ color: UIColor) {
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: color]
+    }
 }
 
 //  MARK: Colors
