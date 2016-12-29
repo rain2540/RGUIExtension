@@ -119,7 +119,7 @@ extension UIView {
      
      - returns: 按参数条件添加的线
      */
-    public func drawLine(_ startPoint: CGPoint, length: CGFloat, width: CGFloat, color: UIColor, direction: RGLineDirection = .horizontal) -> UIView {
+    public func rue_drawLine(_ startPoint: CGPoint, length: CGFloat, width: CGFloat, color: UIColor, direction: RGLineDirection = .horizontal) -> UIView {
         let line = UIView()
         line.backgroundColor = color
         
