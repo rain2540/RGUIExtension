@@ -101,7 +101,7 @@ extension UIView {
      - parameter cornerRadius: 边线圆角半径, 若无圆角则值为0
      - parameter color:        边线颜色
      */
-    public func addBorder(_ width: CGFloat, cornerRadius: CGFloat, color: UIColor) {
+    public func rue_addBorder(_ width: CGFloat, cornerRadius: CGFloat, color: UIColor) {
         self.layer.masksToBounds = true
         self.layer.borderWidth = width
         self.layer.cornerRadius = cornerRadius
