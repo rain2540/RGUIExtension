@@ -8,6 +8,10 @@
 
 import UIKit
 
+extension RGUIExtension where Base: UIView {
+
+}
+
 //  MARK: Rect
 extension UIView {
     //  MARK: size
