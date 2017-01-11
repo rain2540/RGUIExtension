@@ -47,7 +47,7 @@ extension UINavigationBar {
      
      - parameter color: 提供给 Navigation Bar 上文字的颜色
      */
-    static func rue_titleTextColor(_ color: UIColor) {
+    static func titleTextColor(_ color: UIColor) {
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: color]
     }
 }
