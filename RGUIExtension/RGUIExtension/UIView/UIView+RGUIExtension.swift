@@ -9,7 +9,7 @@
 import UIKit
 
 extension RGUIExtension where Base: UIView {
-    public func rue_addBorder(_ width: CGFloat, cornerRadius: CGFloat, color: UIColor) {
+    public func addBorder(_ width: CGFloat, cornerRadius: CGFloat, color: UIColor) {
         base.layer.masksToBounds = true
         base.layer.borderWidth = width
         base.layer.cornerRadius = cornerRadius
