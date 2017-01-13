@@ -9,11 +9,38 @@
 import UIKit
 
 extension RGUIExtension where Base: UIView {
-    public func addBorder(_ width: CGFloat, cornerRadius: CGFloat, color: UIColor) {
+    public func addBorder(
+        width: CGFloat,
+        cornerRadius: CGFloat,
+        color: UIColor)
+    {
         base.layer.masksToBounds = true
         base.layer.borderWidth = width
         base.layer.cornerRadius = cornerRadius
         base.layer.borderColor = color.cgColor
+    }
+
+    public func drawLine(
+        from startPoint: CGPoint,
+        length: CGFloat,
+        width: CGFloat,
+        color: UIColor,
+        direction: RGLineDirection = .horizontal) -> UIView
+    {
+        let line = UIView()
+        line.backgroundColor = color
+
+        switch (direction) {
+        case .horizontal:
+            line.frame = CGRect(x: startPoint.x, y: startPoint.y, width: length, height: width)
+
+        case .vertical:
+            line.frame = CGRect(x: startPoint.x, y: startPoint.y, width: width, height: length)
+        }
+
+        base.addSubview(line)
+
+        return line
     }
 }
 
