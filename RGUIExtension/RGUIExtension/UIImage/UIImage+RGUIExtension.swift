@@ -8,6 +8,10 @@
 
 import UIKit
 
+extension RGUIExtension where Base: UIImage {
+    
+}
+
 //  MARK: URL
 extension UIImage {
     /**
