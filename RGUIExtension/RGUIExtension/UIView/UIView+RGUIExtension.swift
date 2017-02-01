@@ -9,6 +9,12 @@
 import UIKit
 
 extension RGUIExtension where Base: UIView {
+    /// 为视图添加边线
+    ///
+    /// - Parameters:
+    ///   - width: 边线宽度
+    ///   - cornerRadius: 边线圆角半径, 若无圆角则值为 0
+    ///   - color: 边线颜色
     public func addBorder(
         width: CGFloat,
         cornerRadius: CGFloat,
