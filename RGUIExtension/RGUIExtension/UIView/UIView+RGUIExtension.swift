@@ -26,6 +26,15 @@ extension RGUIExtension where Base: UIView {
         base.layer.borderColor = color.cgColor
     }
 
+    /// 在 view 的指定位置加指定颜色的线
+    ///
+    /// - Parameters:
+    ///   - startPoint: 起始点坐标
+    ///   - length: 长度
+    ///   - width: 宽度
+    ///   - color: 颜色
+    ///   - direction: 方向
+    /// - Returns: 按参数条件添加的线
     public func drawLine(
         from startPoint: CGPoint,
         length: CGFloat,
