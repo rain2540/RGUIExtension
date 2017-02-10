@@ -171,6 +171,7 @@ extension UIView {
      
      - returns: 按参数条件添加的线
      */
+    @available(*, deprecated, message: "Extensions directly on UIView are deprecated. Use `UIView.rue.drawLine` instead.", renamed: "rue.drawLine")
     public func rue_drawLine(_ startPoint: CGPoint, length: CGFloat, width: CGFloat, color: UIColor, direction: RGLineDirection = .horizontal) -> UIView {
         let line = UIView()
         line.backgroundColor = color
