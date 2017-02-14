@@ -32,6 +32,7 @@ extension UINavigationBar {
      
      - parameter color: 提供给 Navigation Bar 的背景的 tint color
      */
+    @available(*, deprecated, message: "Extensions directly on UINavigationBar are deprecated. Use `UINavigationBar.rue.barTintColor` instead.", renamed: "rue.barTintColor")
     static func rue_barTintColor(_ color: UIColor) {
         UINavigationBar.appearance().barTintColor = color
     }
