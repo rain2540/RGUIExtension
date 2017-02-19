@@ -16,6 +16,9 @@ extension RGUIExtension where Base: UINavigationBar {
         UINavigationBar.appearance().barTintColor = color
     }
 
+    /// 修改 Navigation item 和 bar button item 的 tint color
+    ///
+    /// - Parameter color: 提供给 Navigation item 和 bar button item 的 tint color
     static func tintColor(_ color: UIColor) {
         UINavigationBar.appearance().tintColor = color
     }
