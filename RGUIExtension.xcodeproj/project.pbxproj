@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B742D9481E5BC7FA00C17540 /* UIViewController+RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742D9471E5BC7FA00C17540 /* UIViewController+RGUIExtension.swift */; };
 		B74421EA1C0C12AE005F78C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74421E91C0C12AE005F78C4 /* AppDelegate.swift */; };
 		B74421EC1C0C12AF005F78C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74421EB1C0C12AF005F78C4 /* ViewController.swift */; };
 		B74421EF1C0C12AF005F78C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74421ED1C0C12AF005F78C4 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B742D9471E5BC7FA00C17540 /* UIViewController+RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+RGUIExtension.swift"; sourceTree = "<group>"; };
 		B74421E61C0C12AE005F78C4 /* RGUIExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGUIExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74421E91C0C12AE005F78C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B74421EB1C0C12AF005F78C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				B744220D1C0C1CAE005F78C4 /* UIImage */,
 				B744220A1C0C19CD005F78C4 /* UINavigationBar */,
 				B74421FF1C0C168D005F78C4 /* UIView */,
+				B742D9471E5BC7FA00C17540 /* UIViewController+RGUIExtension.swift */,
 			);
 			path = RGUIExtension;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				B74421EC1C0C12AF005F78C4 /* ViewController.swift in Sources */,
 				B74421EA1C0C12AE005F78C4 /* AppDelegate.swift in Sources */,
 				B74422121C0C1EA3005F78C4 /* UIColor+RGUIExtension.swift in Sources */,
+				B742D9481E5BC7FA00C17540 /* UIViewController+RGUIExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
