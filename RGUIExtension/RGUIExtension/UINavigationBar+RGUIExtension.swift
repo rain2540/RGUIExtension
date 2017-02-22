@@ -23,6 +23,9 @@ extension RGUIExtension where Base: UINavigationBar {
         UINavigationBar.appearance().tintColor = color
     }
 
+    /// 修改 Navigation Bar 的文字颜色
+    ///
+    /// - Parameter color: 提供给 Navigation Bar 上文字的颜色
     static func titleTextColor(_ color: UIColor) {
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: color]
     }
