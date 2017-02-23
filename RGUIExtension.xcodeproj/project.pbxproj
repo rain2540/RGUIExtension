@@ -13,13 +13,13 @@
 		B74421EF1C0C12AF005F78C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74421ED1C0C12AF005F78C4 /* Main.storyboard */; };
 		B74421F11C0C12AF005F78C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B74421F01C0C12AF005F78C4 /* Assets.xcassets */; };
 		B74421F41C0C12AF005F78C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74421F21C0C12AF005F78C4 /* LaunchScreen.storyboard */; };
-		B74422081C0C199F005F78C4 /* UIView+RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74422061C0C199F005F78C4 /* UIView+RGUIExtension.swift */; };
-		B744220C1C0C1A7C005F78C4 /* UINavigationBar+RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B744220B1C0C1A7C005F78C4 /* UINavigationBar+RGUIExtension.swift */; };
-		B744220F1C0C1CDE005F78C4 /* UIImage+RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B744220E1C0C1CDE005F78C4 /* UIImage+RGUIExtension.swift */; };
-		B74422121C0C1EA3005F78C4 /* UIColor+RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74422111C0C1EA3005F78C4 /* UIColor+RGUIExtension.swift */; };
+		B76D65FD1E5D1E37006848BB /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D65F71E5D1E37006848BB /* MainScreen.swift */; };
+		B76D65FE1E5D1E37006848BB /* UIColor+RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D65F81E5D1E37006848BB /* UIColor+RGUIExtension.swift */; };
+		B76D65FF1E5D1E37006848BB /* UIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D65F91E5D1E37006848BB /* UIConstant.swift */; };
+		B76D66001E5D1E37006848BB /* UIImage+RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D65FA1E5D1E37006848BB /* UIImage+RGUIExtension.swift */; };
+		B76D66011E5D1E37006848BB /* UINavigationBar+RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D65FB1E5D1E37006848BB /* UINavigationBar+RGUIExtension.swift */; };
+		B76D66021E5D1E37006848BB /* UIView+RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D65FC1E5D1E37006848BB /* UIView+RGUIExtension.swift */; };
 		B7A0F3911DF0FD9D002BC81C /* RGUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A0F3901DF0FD9D002BC81C /* RGUIExtension.swift */; };
-		B7CB1E281C15178100069ABD /* UIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB1E271C15178100069ABD /* UIConstant.swift */; };
-		B7CB1E2A1C15217F00069ABD /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB1E291C15217F00069ABD /* MainScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +31,13 @@
 		B74421F01C0C12AF005F78C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B74421F31C0C12AF005F78C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B74421F51C0C12AF005F78C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B74422061C0C199F005F78C4 /* UIView+RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RGUIExtension.swift"; sourceTree = "<group>"; };
-		B744220B1C0C1A7C005F78C4 /* UINavigationBar+RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+RGUIExtension.swift"; path = "UINavigationBar/UINavigationBar+RGUIExtension.swift"; sourceTree = "<group>"; };
-		B744220E1C0C1CDE005F78C4 /* UIImage+RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+RGUIExtension.swift"; path = "UIImage/UIImage+RGUIExtension.swift"; sourceTree = "<group>"; };
-		B74422111C0C1EA3005F78C4 /* UIColor+RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+RGUIExtension.swift"; path = "UIColor/UIColor+RGUIExtension.swift"; sourceTree = "<group>"; };
+		B76D65F71E5D1E37006848BB /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		B76D65F81E5D1E37006848BB /* UIColor+RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGUIExtension.swift"; sourceTree = "<group>"; };
+		B76D65F91E5D1E37006848BB /* UIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstant.swift; sourceTree = "<group>"; };
+		B76D65FA1E5D1E37006848BB /* UIImage+RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+RGUIExtension.swift"; sourceTree = "<group>"; };
+		B76D65FB1E5D1E37006848BB /* UINavigationBar+RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+RGUIExtension.swift"; sourceTree = "<group>"; };
+		B76D65FC1E5D1E37006848BB /* UIView+RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RGUIExtension.swift"; sourceTree = "<group>"; };
 		B7A0F3901DF0FD9D002BC81C /* RGUIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGUIExtension.swift; sourceTree = "<group>"; };
-		B7CB1E271C15178100069ABD /* UIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstant.swift; sourceTree = "<group>"; };
-		B7CB1E291C15217F00069ABD /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,63 +85,15 @@
 			isa = PBXGroup;
 			children = (
 				B7A0F3901DF0FD9D002BC81C /* RGUIExtension.swift */,
-				B74421FC1C0C13FF005F78C4 /* RGUIConstant */,
-				B74422131C0C1F17005F78C4 /* MainScreen */,
-				B74422101C0C1DE3005F78C4 /* UIColor */,
-				B744220D1C0C1CAE005F78C4 /* UIImage */,
-				B744220A1C0C19CD005F78C4 /* UINavigationBar */,
-				B74421FF1C0C168D005F78C4 /* UIView */,
+				B76D65F71E5D1E37006848BB /* MainScreen.swift */,
+				B76D65F81E5D1E37006848BB /* UIColor+RGUIExtension.swift */,
+				B76D65F91E5D1E37006848BB /* UIConstant.swift */,
+				B76D65FA1E5D1E37006848BB /* UIImage+RGUIExtension.swift */,
+				B76D65FB1E5D1E37006848BB /* UINavigationBar+RGUIExtension.swift */,
+				B76D65FC1E5D1E37006848BB /* UIView+RGUIExtension.swift */,
 				B742D9471E5BC7FA00C17540 /* UIViewController+RGUIExtension.swift */,
 			);
 			path = RGUIExtension;
-			sourceTree = "<group>";
-		};
-		B74421FC1C0C13FF005F78C4 /* RGUIConstant */ = {
-			isa = PBXGroup;
-			children = (
-				B7CB1E271C15178100069ABD /* UIConstant.swift */,
-			);
-			path = RGUIConstant;
-			sourceTree = "<group>";
-		};
-		B74421FF1C0C168D005F78C4 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				B74422061C0C199F005F78C4 /* UIView+RGUIExtension.swift */,
-			);
-			path = UIView;
-			sourceTree = "<group>";
-		};
-		B744220A1C0C19CD005F78C4 /* UINavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-				B744220B1C0C1A7C005F78C4 /* UINavigationBar+RGUIExtension.swift */,
-			);
-			name = UINavigationBar;
-			sourceTree = "<group>";
-		};
-		B744220D1C0C1CAE005F78C4 /* UIImage */ = {
-			isa = PBXGroup;
-			children = (
-				B744220E1C0C1CDE005F78C4 /* UIImage+RGUIExtension.swift */,
-			);
-			name = UIImage;
-			sourceTree = "<group>";
-		};
-		B74422101C0C1DE3005F78C4 /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				B74422111C0C1EA3005F78C4 /* UIColor+RGUIExtension.swift */,
-			);
-			name = UIColor;
-			sourceTree = "<group>";
-		};
-		B74422131C0C1F17005F78C4 /* MainScreen */ = {
-			isa = PBXGroup;
-			children = (
-				B7CB1E291C15217F00069ABD /* MainScreen.swift */,
-			);
-			path = MainScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,15 +169,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B744220F1C0C1CDE005F78C4 /* UIImage+RGUIExtension.swift in Sources */,
-				B74422081C0C199F005F78C4 /* UIView+RGUIExtension.swift in Sources */,
-				B7CB1E2A1C15217F00069ABD /* MainScreen.swift in Sources */,
-				B744220C1C0C1A7C005F78C4 /* UINavigationBar+RGUIExtension.swift in Sources */,
+				B76D65FE1E5D1E37006848BB /* UIColor+RGUIExtension.swift in Sources */,
+				B76D66011E5D1E37006848BB /* UINavigationBar+RGUIExtension.swift in Sources */,
+				B76D66001E5D1E37006848BB /* UIImage+RGUIExtension.swift in Sources */,
+				B76D65FD1E5D1E37006848BB /* MainScreen.swift in Sources */,
 				B7A0F3911DF0FD9D002BC81C /* RGUIExtension.swift in Sources */,
-				B7CB1E281C15178100069ABD /* UIConstant.swift in Sources */,
+				B76D65FF1E5D1E37006848BB /* UIConstant.swift in Sources */,
 				B74421EC1C0C12AF005F78C4 /* ViewController.swift in Sources */,
 				B74421EA1C0C12AE005F78C4 /* AppDelegate.swift in Sources */,
-				B74422121C0C1EA3005F78C4 /* UIColor+RGUIExtension.swift in Sources */,
+				B76D66021E5D1E37006848BB /* UIView+RGUIExtension.swift in Sources */,
 				B742D9481E5BC7FA00C17540 /* UIViewController+RGUIExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
