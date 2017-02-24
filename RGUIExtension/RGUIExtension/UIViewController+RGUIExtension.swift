@@ -6,4 +6,8 @@
 //  Copyright © 2017年 Smartech. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension RGUIExtension where Base: UIViewController {
+
+}
