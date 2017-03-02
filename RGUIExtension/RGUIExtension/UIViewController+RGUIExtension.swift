@@ -9,5 +9,17 @@
 import UIKit
 
 extension RGUIExtension where Base: UIViewController {
-
+    public var topViewController: UIViewController {
+        if base is UITabBarController {
+            let tabBarController = base as! UITabBarController
+            return tabBarController.selectedViewController!.rue.topViewController
+        } else if base is UINavigationController {
+            let navigationController = base as! UINavigationController
+            return navigationController.visibleViewController!.rue.topViewController
+        } else if let presentedViewController = base.presentedViewController {
+            return presentedViewController.rue.topViewController
+        } else {
+            return base
+        }
+    }
 }
