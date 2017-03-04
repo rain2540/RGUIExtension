@@ -9,6 +9,7 @@
 import UIKit
 
 extension RGUIExtension where Base: UIViewController {
+    /// 获取 topViewController (当前位于顶层的 活跃的 ViewController)
     public var topViewController: UIViewController {
         if base is UITabBarController {
             let tabBarController = base as! UITabBarController
