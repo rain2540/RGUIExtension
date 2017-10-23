@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  RGUIExtension
+//  SingleCandy
 //
-//  Created by RAIN on 15/11/30.
-//  Copyright © 2015年 Smartech. All rights reserved.
+//  Created by RAIN on 2017/10/23.
+//  Copyright © 2017年 Smartech. All rights reserved.
 //
 
 import UIKit
